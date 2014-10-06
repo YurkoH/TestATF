@@ -1,0 +1,117 @@
+-------------------------------------------------------------------------------
+Test set: com.lohika.atf.tests.TestF
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 20.472 sec <<< FAILURE! - in com.lohika.atf.tests.TestF
+editCancelProduct(com.lohika.atf.tests.TestF)  Time elapsed: 0.051 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'table-row')][contains(.,'eProduc1')]/div[contains(@class,'tr-cell actions')]/img[1]"}
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.core.web.WebComponent.getWebElement(WebComponent.java:39)
+	at com.lohika.atf.core.web.WebComponent.click(WebComponent.java:29)
+	at com.lohika.atf.core.web.page.MainPage.EditProductByName(MainPage.java:119)
+	at com.lohika.atf.tests.TestF.editCancelProduct(TestF.java:134)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'table-row')][contains(.,'eProduc1')]/div[contains(@class,'tr-cell actions')]/img[1]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+
+editProductInvoice(com.lohika.atf.tests.TestF)  Time elapsed: 1.071 sec  <<< FAILURE!
+java.lang.AssertionError: expected [[[FirefoxDriver: firefox on WINDOWS (478c029f-1eeb-4628-9e28-fc99178303d1)] -> xpath: //div[1]/div[contains(@class,'product')]]] but found [eProduc1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.lohika.atf.tests.TestF.editProductInvoice(TestF.java:128)
+
+validationAddProductFields(com.lohika.atf.tests.TestF)  Time elapsed: 0.678 sec  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,'product')]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression "//input[contains(@id,'product')]/@class" is: [object XrayWrapper [object Attr]]. It should be an element.
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.tests.TestF.validationAddProductFields(TestF.java:150)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,'product')]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression "//input[contains(@id,'product')]/@class" is: [object XrayWrapper [object Attr]]. It should be an element.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9592:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9623:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+
+validationEditProductFields(com.lohika.atf.tests.TestF)  Time elapsed: 1.025 sec  <<< FAILURE!
+org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,'product')]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression "//input[contains(@id,'product')]/@class" is: [object XrayWrapper [object Attr]]. It should be an element.
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.tests.TestF.validationEditProductFields(TestF.java:162)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,'product')]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression "//input[contains(@id,'product')]/@class" is: [object XrayWrapper [object Attr]]. It should be an element.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9592:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9623:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+

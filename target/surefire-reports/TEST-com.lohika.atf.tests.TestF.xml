@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lohika.atf.tests.TestF" time="9.01" tests="8" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
+    <property name="java.vm.version" value="24.51-b03"/>
+    <property name="browser" value="firefox"/>
+    <property name="user.country.format" value="UA"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\yhnatyshyn.LV\workspace\atf"/>
+    <property name="java.runtime.version" value="1.7.0_51-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\YHNATY~1.LV\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\yhnatyshyn.LV\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3847338255741156060.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\TortoiseSVN\bin;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft Network Monitor 3\;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Program Files\cURL\bin;C:\Users\yhnatyshyn.LV\Documents\c3_project\c3\libs\libs;C:\Users\yhnatyshyn.LV\Documents\c3_project\c3\src\main\resources\libs\libs;E:\SikuliX\libs;C:\Program Files (x86)\Nmap;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\yhnatyshyn.LV"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="yhnatyshyn"/>
+    <property name="java.class.path" value="/E:/progs/eclipse-standard-kepler-SR2-win32-x86_64/eclipse/configuration/org.eclipse.osgi/bundles/360/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre7"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean test -D browser=firefox"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="uk"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_51"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre7\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 13.0.2\jre\lib\tools.jar"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\yhnatyshyn.LV\workspace\atf\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="maven.bootclasspath" value="/E:/progs/eclipse-standard-kepler-SR2-win32-x86_64/eclipse/configuration/org.eclipse.osgi/bundles/360/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="addProducts" classname="com.lohika.atf.tests.TestF" time="5.865"/>
+  <testcase name="calcPrice" classname="com.lohika.atf.tests.TestF" time="0.136"/>
+  <testcase name="deleteProducts" classname="com.lohika.atf.tests.TestF" time="0.184"/>
+  <testcase name="editCancelProduct" classname="com.lohika.atf.tests.TestF" time="0.051">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;table-row&apos;)][contains(.,&apos;eProduc1&apos;)]/div[contains(@class,&apos;tr-cell actions&apos;)]/img[1]&quot;}&#10;Command duration or timeout: 23 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;&#10;Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'table-row')][contains(.,'eProduc1')]/div[contains(@class,'tr-cell actions')]/img[1]"}
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.core.web.WebComponent.getWebElement(WebComponent.java:39)
+	at com.lohika.atf.core.web.WebComponent.click(WebComponent.java:29)
+	at com.lohika.atf.core.web.page.MainPage.EditProductByName(MainPage.java:119)
+	at com.lohika.atf.tests.TestF.editCancelProduct(TestF.java:134)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'table-row')][contains(.,'eProduc1')]/div[contains(@class,'tr-cell actions')]/img[1]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+]]></failure>
+  </testcase>
+  <testcase name="editProductInvoice" classname="com.lohika.atf.tests.TestF" time="1.071">
+    <failure message="expected [[[FirefoxDriver: firefox on WINDOWS (478c029f-1eeb-4628-9e28-fc99178303d1)] -&gt; xpath: //div[1]/div[contains(@class,&apos;product&apos;)]]] but found [eProduc1]" type="java.lang.AssertionError">java.lang.AssertionError: expected [[[FirefoxDriver: firefox on WINDOWS (478c029f-1eeb-4628-9e28-fc99178303d1)] -> xpath: //div[1]/div[contains(@class,'product')]]] but found [eProduc1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.lohika.atf.tests.TestF.editProductInvoice(TestF.java:128)
+</failure>
+  </testcase>
+  <testcase name="editProductSingleRow" classname="com.lohika.atf.tests.TestF" time="0"/>
+  <testcase name="validationAddProductFields" classname="com.lohika.atf.tests.TestF" time="0.678">
+    <failure message="The given selector //input[contains(@id,&apos;product&apos;)]/@class is either invalid or does not result in a WebElement. The following error occurred:&#10;InvalidSelectorError: The result of the xpath expression &quot;//input[contains(@id,&apos;product&apos;)]/@class&quot; is: [object XrayWrapper [object Attr]]. It should be an element.&#10;Command duration or timeout: 30 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;&#10;Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,'product')]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression "//input[contains(@id,'product')]/@class" is: [object XrayWrapper [object Attr]]. It should be an element.
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.tests.TestF.validationAddProductFields(TestF.java:150)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,'product')]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression "//input[contains(@id,'product')]/@class" is: [object XrayWrapper [object Attr]]. It should be an element.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9592:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9623:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+]]></failure>
+  </testcase>
+  <testcase name="validationEditProductFields" classname="com.lohika.atf.tests.TestF" time="1.025">
+    <failure message="The given selector //input[contains(@id,&apos;product&apos;)]/@class is either invalid or does not result in a WebElement. The following error occurred:&#10;InvalidSelectorError: The result of the xpath expression &quot;//input[contains(@id,&apos;product&apos;)]/@class&quot; is: [object XrayWrapper [object Attr]]. It should be an element.&#10;Command duration or timeout: 25 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;&#10;Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,'product')]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression "//input[contains(@id,'product')]/@class" is: [object XrayWrapper [object Attr]]. It should be an element.
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.tests.TestF.validationEditProductFields(TestF.java:162)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,'product')]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression "//input[contains(@id,'product')]/@class" is: [object XrayWrapper [object Attr]]. It should be an element.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'LVP1210002', ip: '172.22.40.72', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9592:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9623:5)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+]]></failure>
+  </testcase>
+</testsuite>

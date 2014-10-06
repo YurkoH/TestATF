@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Surefire suite</th></tr><tr><td><a href="#t0">Surefire test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">4</td><td class="num">9 033</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.lohika.atf.tests.TestF</td><td><a href="#m0">editCancelProduct</a></td><td rowspan="1">1412608991374</td><td rowspan="1">31</td></tr><tr class="failedeven"><td><a href="#m1">editProductInvoice</a></td><td rowspan="1">1412608991424</td><td rowspan="1">1073</td></tr><tr class="failedeven"><td><a href="#m2">validationAddProductFields</a></td><td rowspan="1">1412608992499</td><td rowspan="1">674</td></tr><tr class="failedeven"><td><a href="#m3">validationEditProductFields</a></td><td rowspan="1">1412608993178</td><td rowspan="1">1022</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.lohika.atf.tests.TestF</td><td><a href="#m4">addProducts</a></td><td rowspan="1">1412608985185</td><td rowspan="1">5865</td></tr><tr class="passedeven"><td><a href="#m5">calcPrice</a></td><td rowspan="1">1412608991051</td><td rowspan="1">138</td></tr><tr class="passedeven"><td><a href="#m6">deleteProducts</a></td><td rowspan="1">1412608991190</td><td rowspan="1">183</td></tr><tr class="passedeven"><td><a href="#m7">editProductSingleRow</a></td><td rowspan="1">1412608992498</td><td rowspan="1">0</td></tr></tbody></table><h2>Surefire test</h2><h3 id="m0">com.lohika.atf.tests.TestF#editCancelProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;table-row&apos;)][contains(.,&apos;eProduc1&apos;)]/div[contains(@class,&apos;tr-cell actions&apos;)]/img[1]&quot;}
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.core.web.WebComponent.getWebElement(WebComponent.java:39)
+	at com.lohika.atf.core.web.WebComponent.click(WebComponent.java:29)
+	at com.lohika.atf.core.web.page.MainPage.EditProductByName(MainPage.java:119)
+	at com.lohika.atf.tests.TestF.editCancelProduct(TestF.java:134)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;table-row&apos;)][contains(.,&apos;eProduc1&apos;)]/div[contains(@class,&apos;tr-cell actions&apos;)]/img[1]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9618:133)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.lohika.atf.tests.TestF#editProductInvoice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [[[FirefoxDriver: firefox on WINDOWS (478c029f-1eeb-4628-9e28-fc99178303d1)] -&gt; xpath: //div[1]/div[contains(@class,&apos;product&apos;)]]] but found [eProduc1]
+	at com.lohika.atf.tests.TestF.editProductInvoice(TestF.java:128)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.lohika.atf.tests.TestF#validationAddProductFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,&apos;product&apos;)]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression &quot;//input[contains(@id,&apos;product&apos;)]/@class&quot; is: [object XrayWrapper [object Attr]]. It should be an element.
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.tests.TestF.validationAddProductFields(TestF.java:150)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,&apos;product&apos;)]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression &quot;//input[contains(@id,&apos;product&apos;)]/@class&quot; is: [object XrayWrapper [object Attr]]. It should be an element.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9592:5)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9623:5)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.lohika.atf.tests.TestF#validationEditProductFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,&apos;product&apos;)]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression &quot;//input[contains(@id,&apos;product&apos;)]/@class&quot; is: [object XrayWrapper [object Attr]]. It should be an element.
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
+Session ID: 478c029f-1eeb-4628-9e28-fc99178303d1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=32.0.3}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.lohika.atf.tests.TestF.validationEditProductFields(TestF.java:162)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input[contains(@id,&apos;product&apos;)]/@class is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: The result of the xpath expression &quot;//input[contains(@id,&apos;product&apos;)]/@class&quot; is: [object XrayWrapper [object Attr]]. It should be an element.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;LVP1210002&apos;, ip: &apos;172.22.40.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_51&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9592:5)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9623:5)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9627:3)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:16)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11617:7)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/YHNATY~1.LV/AppData/Local/Temp/anonymous661063986609629879webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11559:5)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.lohika.atf.tests.TestF#addProducts</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.lohika.atf.tests.TestF#calcPrice</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.lohika.atf.tests.TestF#deleteProducts</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.lohika.atf.tests.TestF#editProductSingleRow</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

@@ -20,4 +20,8 @@ public class TextInput extends WebComponent<TextInput> {
 		getWebElement().clear();
 		return this;
 	}
+	public TextInput getAttribute(String string) {
+			getWebElement().getAttribute(string);
+			return this;
+		}
 }

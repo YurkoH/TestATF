@@ -1,6 +1,9 @@
 package com.lohika.atf.tests;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
 
+import org.hamcrest.core.IsEqual;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -30,7 +33,7 @@ public class TestF extends Base {
 	double priceProd2 =5.3;
 	
 	// Edit Product
-	String eProduct2 ="eProduc2";
+	String eProduct2 ="eProduc2fsdsdfsdfds";
 	int quantProdE =44;
 	int priceProdE =55;
 	
@@ -146,11 +149,48 @@ public class TestF extends Base {
 	// Strings
 	// No values in fields
 	public void validationAddProductFields(){
-		main.addProduct("aP", 1, 2);
-		WebElement prod=driver.findElement(By.xpath("//input[contains(@id,'product')]"));
-		Assert.assertEquals("input-field error",prod.getAttribute("class"));
-	}
+		//Product Name' > 3 characters
+		main.addProduct("aP", 1, 2);				
+	//	Assert.assertEquals("input-field error",main.getAddProductError());
+		assertThat("Product Name' > 3 characters",main.getAddProductError(),IsEqual.equalTo("input-field error"));
+		
+		
+		try{
+			Thread.sleep(3000);
+		}
+		catch(Exception ex){}
 	
+		//negative numbers
+		main.addProduct("aP", -1, -2);
+		assertThat("Error on negative quantity",main.getAddQuantiryError(),IsEqual.equalTo("input-field error"));
+		assertThat("Error on negative price",main.getAddPriceError(),IsEqual.equalTo("input-field error"));
+		
+		try{
+			Thread.sleep(3000);
+		}
+		catch(Exception ex){}
+		
+	
+		
+		// Strings
+		main.addProduct("aP", "test", "test");
+		assertThat("Error if quantity is string",main.getAddQuantiryError(),IsEqual.equalTo("input-field error"));
+		assertThat("Error if price is string",main.getAddPriceError(),IsEqual.equalTo("input-field error"));
+
+		try{
+			Thread.sleep(3000);
+		}
+		catch(Exception ex){}
+			
+		
+		// No values in fields
+		main.addProduct("", "", "");
+		assertThat("Error if product is empty",main.getAddQuantiryError(),IsEqual.equalTo("input-field error"));
+		assertThat("Error if quantity is empty",main.getAddQuantiryError(),IsEqual.equalTo("input-field error"));
+		assertThat("Error if price is empty",main.getAddPriceError(),IsEqual.equalTo("input-field error"));
+		
+	}
+
 	@Test(description="Validation of 'Edit mode' fields ")
 	// Product Name' > 3 characters
 	// negative numbers
@@ -159,11 +199,27 @@ public class TestF extends Base {
 	public void validationEditProductFields(){
 		main.EditProductByRow(1);
 		edit.editProduct("aP", 1, 2);
-		WebElement prod=driver.findElement(By.xpath("//div[contains(@class,'product edit')]/input"));
-		Assert.assertEquals("edit-input wide-edit error",prod.getAttribute("class"));
+		assertThat("Product Name' > 3 characters",edit.getEditProductError(),IsEqual.equalTo("edit-input wide-edit error"));
+		
+		//negative numbers
+		main.addProduct(aProduct1, 1, 2);
+		main.EditProductByRow(2);
+		edit.editProduct("aP", -1000, 2);
+		assertThat("Error on negative numbers",edit.getEditQuantiryError(),IsEqual.equalTo("edit-input narrow-edit error"));
+		
+		// Strings
+		edit.editProduct("aP", "1", "test");
+		assertThat("Error if price is string",edit.getEditPriceError(),IsEqual.equalTo("edit-input narrow-edit error"));
+		
+		//// No values in fields
+		edit.editProduct("", "", "");
 		try{
 			Thread.sleep(3000);
 		}
 		catch(Exception ex){}
+		assertThat("Error if product is empty",edit.getEditProductError(),IsEqual.equalTo("edit-input wide-edit error"));
+		assertThat("Error if quantity is empty",edit.getEditQuantiryError(),IsEqual.equalTo("edit-input narrow-edit error"));
+		assertThat("Error if price is empty",edit.getEditPriceError(),IsEqual.equalTo("edit-input narrow-edit error"));
+		
 	}
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.lohika.atf.core.web.WebPage;
 import com.lohika.atf.core.web.elements.Button;
+import com.lohika.atf.core.web.elements.TextError;
 import com.lohika.atf.core.web.elements.TextInput;
 
 public class EditPage extends WebPage<MainPage>{
@@ -41,6 +42,26 @@ public EditPage(WebDriver driver) {
 	private Button editCancel(){
 		return new Button(driver, By.xpath("//div[contains(@class,'table-row')]//div[contains(@class,'tr-cell')]/img[contains(@title,'Cancel')]"));
 	}
+	
+	
+	// Elements for test verification
+	public String getEditProductError()
+	{
+		return new TextError(driver, By.xpath("//div[contains(@class,'product edit')]/input")).getAttribute("class");
+	}
+	
+	public String getEditQuantiryError()
+	{
+		return new TextError(driver, By.xpath("//div[contains(@class,'quantity edit')]/input")).getAttribute("class");
+	}
+	
+	public String getEditPriceError()
+	{
+		return new TextError(driver, By.xpath("//div[contains(@class,'price edit')]/input")).getAttribute("class");
+	}
+	
+	
+	
 	
 	
 	public void editProduct(String product, String quantity, String price)

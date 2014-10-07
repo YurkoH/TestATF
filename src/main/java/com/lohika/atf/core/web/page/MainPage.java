@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.lohika.atf.core.web.WebPage;
 import com.lohika.atf.core.web.elements.Button;
+import com.lohika.atf.core.web.elements.TextError;
 import com.lohika.atf.core.web.elements.TextInput;
 
 public class MainPage extends WebPage<MainPage> {
@@ -43,6 +44,26 @@ public class MainPage extends WebPage<MainPage> {
 	private Button getAddProduct(){
 		return new Button(driver, By.id("add-button"));
 	}
+	
+	
+	// Elements for test verification
+	public String getAddProductError()
+	{
+		return new TextError(driver, By.xpath("//input[contains(@id,'product')]")).getAttribute("class");
+	}
+	
+	public String getAddQuantiryError()
+	{
+		return new TextError(driver, By.xpath("//input[contains(@id,'quantity')]")).getAttribute("class");
+	}
+	
+	public String getAddPriceError()
+	{
+		return new TextError(driver, By.xpath("//input[contains(@id,'price')]")).getAttribute("class");
+	}
+	
+	
+	
 	/*
 	private GroupElements getGroupElements(){
 		return new GroupElements(driver, By.xpath("//div[contains(@class,'table-row')][contains(.,'test')]"));
@@ -73,28 +94,43 @@ public class MainPage extends WebPage<MainPage> {
 	}
 
 	public void addProduct(String product, String quantity, String price)
-	{
+	{	
+		getProductName().clearText();
 		getProductName().inputText(product);
+		
+		getQuantity().clearText();
 		getQuantity().inputText(quantity);
+		
+		getPrice().clearText();
 		getPrice().inputText(price);
 		getAddProduct().click();		
 	}
 	
 	public void addProduct(String product, int quantity, int price)
-	{	
+	{	getProductName().clearText();
 		getProductName().inputText(product);
+		
+		getQuantity().clearText();
 		getQuantity().inputText(Integer.toString(quantity));
+		
+		getPrice().clearText();
 		getPrice().inputText(Integer.toString(price));
+		
 		getAddProduct().click();
 		
 	}
 
 	
 	public void addProduct(String product, double quantity, double price)
-	{
+	{	getProductName().clearText();
 		getProductName().inputText(product);
+		
+		getQuantity().clearText();
 		getQuantity().inputText(Double.toString(quantity));
+		
+		getPrice().clearText();
 		getPrice().inputText(Double.toString(price));
+		
 		getAddProduct().click();
 
 		

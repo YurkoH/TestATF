@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\yhnatyshyn.LV\AppData\Local\Temp\testng-eclipse--1104723453\testng-customsuite.xml</span>
+                    <span>C:\Users\yhnatyshyn.LV\AppData\Local\Temp\testng-eclipse--589535364\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,16 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lohika.atf.tests.TestF" hash-for-method="CSVaddProducts({product=test1, price=23, quantity=1})">CSVaddProducts({product=test1, price=23, quantity=1})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lohika.atf.tests.TestF" hash-for-method="CSVaddProducts({product=test2, price=23.34, quantity=1.2})">CSVaddProducts({product=test2, price=23.34, quantity=1.2})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lohika.atf.tests.TestF" hash-for-method="addProducts">addProducts</a> <!-- method navigator-link -->
@@ -157,6 +167,26 @@
               <span class="class-name">com.lohika.atf.tests.TestF</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CSVaddProducts({product=test1, price=23, quantity=1})">
+                  </a> <!-- CSVaddProducts({product=test1, price=23, quantity=1}) -->
+                  <span class="method-name">CSVaddProducts</span>
+                  <span class="parameters">({product=test1, price=23, quantity=1})</span>
+                  <em>
+(Add Product via csv)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CSVaddProducts({product=test2, price=23.34, quantity=1.2})">
+                  </a> <!-- CSVaddProducts({product=test2, price=23.34, quantity=1.2}) -->
+                  <span class="method-name">CSVaddProducts</span>
+                  <span class="parameters">({product=test2, price=23.34, quantity=1.2})</span>
+                  <em>
+(Add Product via csv)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="addProducts">
@@ -234,7 +264,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\yhnatyshyn.LV\AppData\Local\Temp\testng-eclipse--1104723453\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\yhnatyshyn.LV\AppData\Local\Temp\testng-eclipse--589535364\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -283,44 +313,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validationAddProductFields')
 data.setCell(0, 2, 'com.lohika.atf.tests.TestF')
-data.setCell(0, 3, 12347);
+data.setCell(0, 3, 12301);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validationEditProductFields')
 data.setCell(1, 2, 'com.lohika.atf.tests.TestF')
-data.setCell(1, 3, 7757);
+data.setCell(1, 3, 7793);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addProducts')
+data.setCell(2, 1, 'CSVaddProducts')
 data.setCell(2, 2, 'com.lohika.atf.tests.TestF')
-data.setCell(2, 3, 6110);
+data.setCell(2, 3, 5622);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'editCancelProduct')
+data.setCell(3, 1, 'addProducts')
 data.setCell(3, 2, 'com.lohika.atf.tests.TestF')
-data.setCell(3, 3, 1224);
+data.setCell(3, 3, 4779);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'editProductInvoice')
+data.setCell(4, 1, 'CSVaddProducts')
 data.setCell(4, 2, 'com.lohika.atf.tests.TestF')
-data.setCell(4, 3, 1103);
+data.setCell(4, 3, 3829);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'deleteProducts')
+data.setCell(5, 1, 'editCancelProduct')
 data.setCell(5, 2, 'com.lohika.atf.tests.TestF')
-data.setCell(5, 3, 185);
+data.setCell(5, 3, 1145);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'calcPrice')
+data.setCell(6, 1, 'editProductInvoice')
 data.setCell(6, 2, 'com.lohika.atf.tests.TestF')
-data.setCell(6, 3, 135);
+data.setCell(6, 3, 1054);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'editProductSingleRow')
+data.setCell(7, 1, 'deleteProducts')
 data.setCell(7, 2, 'com.lohika.atf.tests.TestF')
-data.setCell(7, 3, 1);
+data.setCell(7, 3, 190);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'calcPrice')
+data.setCell(8, 2, 'com.lohika.atf.tests.TestF')
+data.setCell(8, 3, 144);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'editProductSingleRow')
+data.setCell(9, 2, 'com.lohika.atf.tests.TestF')
+data.setCell(9, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -352,40 +390,48 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
+                <span class="method-name">CSVaddProducts({product=test1, price=23, quantity=1})</span>
+                <span class="method-start">10149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CSVaddProducts({product=test2, price=23.34, quantity=1.2})</span>
+                <span class="method-start">15772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">addProducts</span>
-                <span class="method-start">9501 ms</span>
+                <span class="method-start">19603 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">calcPrice</span>
-                <span class="method-start">15613 ms</span>
+                <span class="method-start">24383 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteProducts</span>
-                <span class="method-start">15749 ms</span>
+                <span class="method-start">24528 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editCancelProduct</span>
-                <span class="method-start">15935 ms</span>
+                <span class="method-start">24719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editProductInvoice</span>
-                <span class="method-start">17160 ms</span>
+                <span class="method-start">25865 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editProductSingleRow</span>
-                <span class="method-start">18265 ms</span>
+                <span class="method-start">26921 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validationAddProductFields</span>
-                <span class="method-start">18267 ms</span>
+                <span class="method-start">26923 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validationEditProductFields</span>
-                <span class="method-start">30615 ms</span>
+                <span class="method-start">39225 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38419 ms</span>
+                <span class="method-start">47073 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

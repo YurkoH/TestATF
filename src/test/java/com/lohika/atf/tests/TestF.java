@@ -3,6 +3,8 @@ package com.lohika.atf.tests;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+import java.util.Map;
+
 import org.hamcrest.core.IsEqual;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,6 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.lohika.atf.core.Base;
+import com.lohika.atf.core.CsvDataProvider;
 import com.lohika.atf.core.web.page.EditPage;
 import com.lohika.atf.core.web.page.MainPage;
 
@@ -45,41 +48,50 @@ public class TestF extends Base {
 	WebElement el2;
 	
 	
+	// Test: Successful 'Addition of the Product via csv
+	// Add 2 products
+	// Check Product names
+	
+	@Test(dataProvider ="CsvDataProvider",dataProviderClass= CsvDataProvider.class,description="Add Product via csv")
+	
+public void CSVaddProducts(Map<String, String> testData){
+		
+		main = new MainPage(driver);
+//		edit = new EditPage(driver);
+
+		System.out.println(testData.get("product"));
+		System.out.println(testData.get("quantity"));
+		System.out.println(testData.get("price"));
+		
+		main.addProduct(testData.get("product"), testData.get("quantity"), testData.get("price"));
+		el1 = driver.findElement(By.xpath("//div[last()]/div[contains(@class,'product')]"));
+
+		Assert.assertEquals(testData.get("product"),el1.getText());
+		try{
+			Thread.sleep(3000);
+		}
+		catch(Exception ex){}		
+		
+	}
+	
 	// Test: Successful 'Addition of the Product
 	// Add 2 products
 	// Check Product names
 	
 	@Test(description="Add Product")
-
 	public void addProducts(){
 		
 		main = new MainPage(driver);
 		edit = new EditPage(driver);
-		
-	//	el1.findElement(By.xpath("//div[contains(@class,'product')]"));
-		//driver.get("http://10.5.254.10:8080/");
-		
-	/*	
-		for (int i =0; i<5; i++)
-		
-		{
-	main.addProduct("prod"+i, 1+i, 2+i);
-	try{
-		Thread.sleep(1000);
-	}
-	catch(Exception ex){}
-		}
-		*/
-	//	main.deleteProduct(5);
-		
+
 		main.addProduct(aProduct1, quantProd1, priceProd1);
 		el1 = driver.findElement(By.xpath("//div[last()]/div[contains(@class,'product')]"));
-		//el1=el1.findElement(By.xpath("//div[contains(@class,'product')]"));
 		Assert.assertEquals(aProduct1,el1.getText());
+	//	main.addProduct(testData.get("product"), testData.get("quantity"), testData.get("price"));
 		
 		main.addProduct(aProduct2, quantProd2, priceProd2);
 		el2 = driver.findElement(By.xpath("//div[last()]/div[contains(@class,'product')]"));
-		Assert.assertEquals(aProduct2,el2.getText());
+		Assert.assertEquals(aProduct2,el2.getText()); 
 		try{
 			Thread.sleep(3000);
 		}

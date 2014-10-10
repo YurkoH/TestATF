@@ -5,7 +5,7 @@
     <classes>
       <class name="com.lohika.atf.tests.TestF">
         <methods>
-          <include name="validationEditProductFields"/>
+          <include name="CSVaddProducts" invocation-numbers="1"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>

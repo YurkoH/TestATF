@@ -48,6 +48,12 @@
   			<artifactId>maven-surefire-plugin</artifactId>
   			<version>2.17</version>
   			<configuration>
+  			<properties>
+  				<property>
+  					<name>listener</name>
+  					<value>com.lohika.atf.core.ScreenshotOnTestFailure</value>
+  				</property>
+  			</properties>
   				<systemPropertyVariables>
   				<browser>${browser}</browser>
   				</systemPropertyVariables>

@@ -1,19 +1,21 @@
 package com.lohika.atf.core;
 
-import javax.print.DocFlavor.STRING;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.BrowserType;
+
 
 public class DriverMaster {
-	
-	private DriverMaster () {}
+	static WebDriver driver;
+	private DriverMaster () {
+		
+	}
 	
 	public static WebDriver getDriver(String driverKey) {
 		BrowserTypes browser = BrowserTypes.get(driverKey);
-		WebDriver driver;
+		
 		switch (browser){
 			case FIREFOX:
 				driver =new FirefoxDriver();

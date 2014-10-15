@@ -5,9 +5,10 @@
     <classes>
       <class name="com.lohika.atf.tests.TestF">
         <methods>
-          <include name="CSVaddProducts" invocation-numbers="1"/>
+          <include name="calcPrice"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="load"/>
         </methods>
       </class> <!-- com.lohika.atf.tests.TestF -->
     </classes>

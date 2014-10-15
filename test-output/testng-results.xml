@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="1" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36892" started-at="2014-10-10T15:46:03Z" finished-at="2014-10-10T15:46:39Z">
+  <suite name="Default suite" duration-ms="33612" started-at="2014-10-15T12:50:50Z" finished-at="2014-10-15T12:51:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36892" started-at="2014-10-10T15:46:03Z" finished-at="2014-10-10T15:46:39Z">
+    <test name="Default test" duration-ms="33612" started-at="2014-10-15T12:50:50Z" finished-at="2014-10-15T12:51:23Z">
       <class name="com.lohika.atf.tests.TestF">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="setup" is-config="true" duration-ms="10128" started-at="2014-10-10T18:45:52Z" finished-at="2014-10-10T18:46:03Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="setup" is-config="true" duration-ms="10461" started-at="2014-10-15T15:50:39Z" finished-at="2014-10-15T15:50:50Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="CSVaddProducts(java.util.Map)[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="CSVaddProducts" duration-ms="5622" started-at="2014-10-10T18:46:03Z" description="Add Product via csv" data-provider="CsvDataProvider" finished-at="2014-10-10T18:46:08Z">
+        <test-method status="PASS" signature="load()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="load" is-config="true" duration-ms="690" started-at="2014-10-15T15:50:50Z" finished-at="2014-10-15T15:50:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- load -->
+        <test-method status="PASS" signature="CSVaddProducts(java.util.Map)[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="CSVaddProducts" duration-ms="3849" started-at="2014-10-15T15:50:51Z" description="Add Product via csv" data-provider="CsvDataProvider" finished-at="2014-10-15T15:50:54Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CSVaddProducts -->
-        <test-method status="PASS" signature="CSVaddProducts(java.util.Map)[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="CSVaddProducts" duration-ms="3829" started-at="2014-10-10T18:46:08Z" description="Add Product via csv" data-provider="CsvDataProvider" finished-at="2014-10-10T18:46:12Z">
+        <test-method status="PASS" signature="CSVaddProducts(java.util.Map)[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="CSVaddProducts" duration-ms="3555" started-at="2014-10-15T15:50:54Z" description="Add Product via csv" data-provider="CsvDataProvider" finished-at="2014-10-15T15:50:58Z">
           <params>
             <param index="0">
               <value>
@@ -40,39 +44,77 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CSVaddProducts -->
-        <test-method status="PASS" signature="addProducts()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="addProducts" duration-ms="4779" started-at="2014-10-10T18:46:12Z" description="Add Product" finished-at="2014-10-10T18:46:17Z">
+        <test-method status="PASS" signature="addProducts()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="addProducts" duration-ms="4358" started-at="2014-10-15T15:50:58Z" description="Add Product" finished-at="2014-10-15T15:51:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProducts -->
-        <test-method status="PASS" signature="calcPrice()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="calcPrice" duration-ms="144" started-at="2014-10-10T18:46:17Z" description="Check Calculations of tota price" finished-at="2014-10-10T18:46:17Z">
+        <test-method status="FAIL" signature="calcPrice()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="calcPrice" duration-ms="146" started-at="2014-10-15T15:51:02Z" description="Check Calculations of tota price" finished-at="2014-10-15T15:51:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [43.849999999999994] but found [-3.849999999999998]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [43.849999999999994] but found [-3.849999999999998]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.lohika.atf.tests.TestF.calcPrice(TestF.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcPrice -->
-        <test-method status="PASS" signature="deleteProducts()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="deleteProducts" duration-ms="190" started-at="2014-10-10T18:46:17Z" description="Delete product by name" finished-at="2014-10-10T18:46:17Z">
+        <test-method status="PASS" signature="deleteProducts()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="deleteProducts" duration-ms="152" started-at="2014-10-15T15:51:03Z" description="Delete product by name" finished-at="2014-10-15T15:51:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProducts -->
-        <test-method status="PASS" signature="editCancelProduct()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="editCancelProduct" duration-ms="1145" started-at="2014-10-10T18:46:17Z" description="Successful &#039;Cancel Edit Changes of the product in the Invoice Table&#039;" finished-at="2014-10-10T18:46:18Z">
+        <test-method status="PASS" signature="editCancelProduct()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="editCancelProduct" duration-ms="1410" started-at="2014-10-15T15:51:03Z" description="Successful &#039;Cancel Edit Changes of the product in the Invoice Table&#039;" finished-at="2014-10-15T15:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editCancelProduct -->
-        <test-method status="PASS" signature="editProductInvoice()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="editProductInvoice" duration-ms="1054" started-at="2014-10-10T18:46:18Z" description="Successful &#039;Edit of the product in the Invoice Table&#039;" finished-at="2014-10-10T18:46:19Z">
+        <test-method status="PASS" signature="editProductInvoice()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="editProductInvoice" duration-ms="781" started-at="2014-10-15T15:51:04Z" description="Successful &#039;Edit of the product in the Invoice Table&#039;" finished-at="2014-10-15T15:51:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editProductInvoice -->
-        <test-method status="PASS" signature="editProductSingleRow()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="editProductSingleRow" duration-ms="1" started-at="2014-10-10T18:46:19Z" description="Correct &#039;Edit mode&#039; of a single Product row" finished-at="2014-10-10T18:46:19Z">
+        <test-method status="PASS" signature="editProductSingleRow()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="editProductSingleRow" duration-ms="1" started-at="2014-10-15T15:51:05Z" description="Correct &#039;Edit mode&#039; of a single Product row" finished-at="2014-10-15T15:51:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editProductSingleRow -->
-        <test-method status="PASS" signature="validationAddProductFields()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="validationAddProductFields" duration-ms="12301" started-at="2014-10-10T18:46:19Z" description="Validation of Add Product Panel fields" finished-at="2014-10-10T18:46:32Z">
+        <test-method status="PASS" signature="validationAddProductFields()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="validationAddProductFields" duration-ms="11698" started-at="2014-10-15T15:51:05Z" description="Validation of Add Product Panel fields" finished-at="2014-10-15T15:51:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validationAddProductFields -->
-        <test-method status="PASS" signature="validationEditProductFields()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="validationEditProductFields" duration-ms="7793" started-at="2014-10-10T18:46:32Z" description="Validation of &#039;Edit mode&#039; fields " finished-at="2014-10-10T18:46:39Z">
+        <test-method status="PASS" signature="validationEditProductFields()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="validationEditProductFields" duration-ms="6768" started-at="2014-10-15T15:51:17Z" description="Validation of &#039;Edit mode&#039; fields " finished-at="2014-10-15T15:51:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validationEditProductFields -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lohika.atf.tests.TestF@5b980c78]" name="tearDown" is-config="true" duration-ms="349" started-at="2014-10-10T18:46:39Z" finished-at="2014-10-10T18:46:40Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lohika.atf.tests.TestF@52621f0c]" name="tearDown" is-config="true" duration-ms="426" started-at="2014-10-15T15:51:23Z" finished-at="2014-10-15T15:51:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

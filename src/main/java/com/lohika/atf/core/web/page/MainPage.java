@@ -10,7 +10,7 @@ import com.lohika.atf.core.web.elements.TextInput;
 
 public class MainPage extends WebPage<MainPage> {
 
-	private static final String Main_Page_URL ="http://10.5.254.6:8080/";
+	private static final String Main_Page_URL ="http://10.5.254.42:8080/";
 	public MainPage(WebDriver driver) {
 		super(driver);
 		load();

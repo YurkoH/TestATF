@@ -1,13 +1,16 @@
+com\lohika\atf\core\web\elements\TextError.class
 com\lohika\atf\core\web\WebComponent.class
 com\lohika\atf\core\DriverMaster.class
 com\lohika\atf\core\Base.class
 com\lohika\atf\core\web\elements\Button.class
 com\lohika\atf\core\web\WebPage.class
-com\lohika\atf\core\web\Component.class
 com\lohika\atf\core\web\Wait.class
+com\lohika\atf\core\web\Component.class
+com\lohika\atf\core\ScreenshotOnTestFailure.class
 com\lohika\atf\core\web\elements\GroupElements.class
 com\lohika\atf\core\BrowserTypes.class
 com\lohika\atf\core\web\elements\TextInput.class
 com\lohika\atf\core\web\page\MainPage.class
+com\lohika\atf\core\CsvDataProvider.class
 com\lohika\atf\core\DriverMaster$1.class
 com\lohika\atf\core\web\page\EditPage.class
